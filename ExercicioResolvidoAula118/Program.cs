@@ -26,7 +26,7 @@ namespace ExercicioResolvidoAula118
 
             Console.Write("How many contracts to this Worker?: ");
             int n = int.Parse(Console.ReadLine());
-            for (int i = 0; i < n; i++)
+            for (int i = 1; i < n; i++)
             {
                 Console.WriteLine($"Enter #{i} contract data");
                 Console.Write("Date (DD/MM/YYYY): ");
@@ -41,7 +41,7 @@ namespace ExercicioResolvidoAula118
             }
             Console.WriteLine();
             Console.Write("Enter month and year to alculate income(MM/YYYY): ");
-            string monthAndYear = Console.ReadLine();
+            string monthAndYear = Console.ReadLine();// Aqui Criei um variavel string para informar mes e ano, assim eu usaria o substring para dividir os valores
             int month = int.Parse(monthAndYear.Substring(0, 2));//Aqui Usei o substring para recortar o mes
             int year = int.Parse(monthAndYear.Substring(3));//Aqui Usei o substring para recortar o ano
             Console.WriteLine("Name: "+ worker.Name);

@@ -10,7 +10,8 @@ namespace ExercicioResolvidoAula118.Entities
         public WorkerLevel  Level { get; set; }//esta propriedade e exclusiva criada da classe "enums"
         public double BaseSalary { get; set; }
         public Departament Departament { get; set; }//aqui criei uma Associação de classes (composição de objetos) chamando o objeto Departament no objeto Worker
-        public List<HourContract> Contracts { get; set; } = new List<HourContract>();/*Aqui foi criado uma lista como propriedade associando a classe contratos a classe worker*/
+        public List<HourContract> Contracts { get; set; } = new List<HourContract>();
+        /*Aqui foi criado uma lista como propriedade associando a classe contratos a classe worker*/
 
         public Worker() 
         {
